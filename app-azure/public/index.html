@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi App Azure</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 1.3em;
+        }
+
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            background: white;
+            color: #333;
+            font-size: 1em;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #333;
+            color: white;
+        }
+
+        .card {
+            margin: 30px auto;
+            padding: 20px;
+            width: 300px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🚀 Bienvenido</h1>
+        <p>Tu app ya está corriendo en Azure</p>
+
+        <button onclick="cambiarMensaje()">Haz clic aquí</button>
+
+        <div class="card" id="mensaje">
+            Listo para desplegar automáticamente 😎
+        </div>
+    </div>
+
+    <script>
+        function cambiarMensaje() {
+            document.getElementById("mensaje").innerHTML =
+                "🔥 Cambio detectado... listo para GitHub y Azure!";
+        }
+    </script>
+
+</body>
+</html>
